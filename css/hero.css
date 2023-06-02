@@ -1,0 +1,210 @@
+.hero {
+  padding: 10rem 0;
+  text-align: center;
+  position: relative;
+}
+.hero__block {
+  position: relative;
+  margin: 0 auto 10rem;
+  max-width: 35rem;
+}
+.hero .title {
+  margin-bottom: 1rem;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: .5rem;
+}
+.contacts__item-text {
+  font-size: 1.4rem;
+  font-family: var(--title-font);
+  color: var(--fourth-brand-color);
+}
+a.contacts__item-text {
+  transition: all 0.3s ease-in-out;
+}
+.main {
+  z-index: 3;
+}
+.hero__wrapper .pos {
+  display: none;
+}
+
+.phrase {
+  padding: 10rem 0;
+  text-align: center;
+}
+.phrase__block {
+  margin: 0 auto;
+  max-width: 70rem;
+}
+.phrase__block .text {
+  margin-bottom: 5rem;
+}
+.phrase__title {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 1440px) {
+  .front-page__main .wrapper {
+    position: relative;
+  }
+  .hero-balls {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .ball.first {
+    width: 75rem;
+    height: 75rem;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at 19.49% 32.39%, var(--second-brand-color) 10%, var(--third-brand-color) 90%);
+  }
+  .ball.second {
+    position: absolute;
+    top: 15rem;
+    left: -10rem;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at 70.14% 21.24%, var(--second-brand-color) 30%, var(--third-brand-color) );
+  }
+  .front-page__main .wrapper::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( .8rem );
+    -webkit-backdrop-filter: blur( .8rem );
+  }
+
+  .hero {
+    text-align: left;
+  }
+  .hero__block {
+    margin-right: 0;
+    max-width: 50%;
+    padding-right: 40rem;
+  }
+  .hero .title {
+    font-family: var(--main-font);
+    color: var(--fourth-brand-color);
+    text-transform: lowercase;
+    font-size: 8rem;
+    line-height: 1;
+  }
+  .hero .text {
+    color: var(--fourth-brand-color);
+  }
+  .contacts__list {
+    padding-left: 5rem;
+  }
+  .contacts__item {
+    position: relative;
+  }
+  .contacts__item::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: .5rem;
+    height: .5rem;
+    background-color: var(--second-brand-color);
+    border-radius: 50%;
+    top: 50%;
+    left: -1rem;
+    transform: translate(0, -50%);
+  }
+  a.contacts__item-text:hover {
+    color: var(--accent-color);
+  }
+
+  .ball.third {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    background-image: radial-gradient(circle at 19.49% 32.39%, var(--second-brand-color) 10%, var(--third-brand-color) 90%);
+  }
+  .hero__wrapper {
+    position: relative;
+  }
+  .hero__wrapper .pos {
+    display: block;
+    position: absolute;
+    font-family: var(--main-title-font);
+    font-size: 21rem;
+    color: transparent;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: var(--fourth-brand-color);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+    opacity: .15;
+    line-height: 1;
+  }
+  .hero__wrapper .pos.second {
+    bottom: 20rem;
+  }
+  .hero__wrapper .pos.third {
+    bottom: 40rem;
+  }
+  .phrase {
+    padding: 20rem 10rem;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  .phrase__block {
+    margin-left: 0;
+  }
+  .phrase__block .text {
+    padding-left: 10rem;
+  }
+  .phrase__block-right {
+    position: relative;
+  }
+  .phrase__block-right::before,
+  .phrase__block-right::after {
+    display: block;
+    content: " ";
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    border: .2rem solid var(--fourth-brand-color);
+    opacity: .5;
+    transform: rotateX(75deg) translate(-50%, 0);
+    top: -20rem;
+    left: 50%;
+    z-index: 3;
+  }
+  .ball.third::before {
+    display: block;
+    content: " ";
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    border: .5rem solid var(--fourth-brand-color);
+    opacity: .7;
+    transform: rotateX(75deg) translate(-50%, 0);
+    bottom: 0;
+    left: 50%;
+  }
+  .phrase__block-right::after {
+    top: auto;
+    bottom: -20rem;
+    z-index: 1;
+  }
+}
