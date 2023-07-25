@@ -13,7 +13,7 @@
 }
 
 .contacts__item:not(:last-child) {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .contacts__item-text {
   font-size: 1.4rem;
@@ -60,7 +60,11 @@ a.contacts__item-text {
     width: 75rem;
     height: 75rem;
     border-radius: 50%;
-    background-image: radial-gradient(circle at 19.49% 32.39%, var(--second-brand-color) 10%, var(--third-brand-color) 90%);
+    background-image: radial-gradient(
+      circle at 19.49% 32.39%,
+      var(--second-brand-color) 10%,
+      var(--third-brand-color) 90%
+    );
   }
   .ball.second {
     position: absolute;
@@ -69,7 +73,7 @@ a.contacts__item-text {
     width: 30rem;
     height: 30rem;
     border-radius: 50%;
-    background-image: radial-gradient(circle at 70.14% 21.24%, var(--second-brand-color) 30%, var(--third-brand-color) );
+    background-image: radial-gradient(circle at 70.14% 21.24%, var(--second-brand-color) 30%, var(--third-brand-color));
   }
   .front-page__main .wrapper::before {
     position: absolute;
@@ -81,9 +85,9 @@ a.contacts__item-text {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba( 255, 255, 255, 0.2 );
-    backdrop-filter: blur( .8rem );
-    -webkit-backdrop-filter: blur( .8rem );
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.8rem);
+    -webkit-backdrop-filter: blur(0.8rem);
   }
 
   .hero {
@@ -114,8 +118,8 @@ a.contacts__item-text {
     position: absolute;
     display: block;
     content: '';
-    width: .5rem;
-    height: .5rem;
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: var(--second-brand-color);
     border-radius: 50%;
     top: 50%;
@@ -132,7 +136,11 @@ a.contacts__item-text {
     border-radius: 50%;
     z-index: 2;
     position: relative;
-    background-image: radial-gradient(circle at 19.49% 32.39%, var(--second-brand-color) 10%, var(--third-brand-color) 90%);
+    background-image: radial-gradient(
+      circle at 19.49% 32.39%,
+      var(--second-brand-color) 10%,
+      var(--third-brand-color) 90%
+    );
   }
   .hero__wrapper {
     position: relative;
@@ -149,7 +157,7 @@ a.contacts__item-text {
     left: 50%;
     transform: translate(-50%, 0);
     white-space: nowrap;
-    opacity: .15;
+    opacity: 0.15;
     line-height: 1;
   }
   .hero__wrapper .pos.second {
@@ -159,7 +167,7 @@ a.contacts__item-text {
     bottom: 40rem;
   }
   .phrase {
-    padding: 20rem 10rem;
+    padding: 20rem 10rem 5rem;
     text-align: left;
     align-items: center;
     justify-content: space-between;
@@ -177,13 +185,13 @@ a.contacts__item-text {
   .phrase__block-right::before,
   .phrase__block-right::after {
     display: block;
-    content: " ";
+    content: ' ';
     position: absolute;
     width: 40rem;
     height: 40rem;
     border-radius: 50%;
-    border: .2rem solid var(--fourth-brand-color);
-    opacity: .5;
+    border: 0.2rem solid var(--fourth-brand-color);
+    opacity: 0.5;
     transform: rotateX(75deg) translate(-50%, 0);
     top: -20rem;
     left: 50%;
@@ -191,13 +199,13 @@ a.contacts__item-text {
   }
   .ball.third::before {
     display: block;
-    content: " ";
+    content: ' ';
     position: absolute;
     width: 50rem;
     height: 50rem;
     border-radius: 50%;
-    border: .5rem solid var(--fourth-brand-color);
-    opacity: .7;
+    border: 0.5rem solid var(--fourth-brand-color);
+    opacity: 0.7;
     transform: rotateX(75deg) translate(-50%, 0);
     bottom: 0;
     left: 50%;
